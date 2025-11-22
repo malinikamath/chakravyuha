@@ -1,14 +1,21 @@
 body {
     text-align: center;
+    background-color: lightgray;
     display: grid;
     height: 100vh;
     margin: 0;
     place-items: center;
+    font-size: larger;
+    font-family: 'Courier New', 'Arial Narrow', Arial, sans-serif;
 }
 
 .textbox {
     background-color: white;
     color: black;
+    padding: 1vh;
+    padding-top: 6.5vh;
+    border: double black 8px;
+    margin: 3vh;
 }
 
 .hidden {
@@ -19,7 +26,7 @@ p:hover .hidden, p:focus .hidden {
     visibility: visible;
 }
 
-.start {
+.btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: black;
@@ -28,7 +35,7 @@ p:hover .hidden, p:focus .hidden {
     margin-top: 3vh;
 }
 
-.start:hover, .start:focus {
+.btn:hover, .btn:focus {
     background-color: white;
     color: black;
 }
@@ -37,6 +44,9 @@ p:hover .hidden, p:focus .hidden {
     .textbox {
         color: white;
         background-color: black;
-        border: solid gray 10px;
+        border-color: white;
+    }
+    body {
+        background-color: darkslategray;
     }
 }
