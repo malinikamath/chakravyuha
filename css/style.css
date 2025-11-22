@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+}
+
+.textbox {
+    background-color: white;
+    color: black;
+}
+
+.hidden {
+    visibility: hidden;
+    padding: 1vh;
+}
+p:hover .hidden, p:focus .hidden {
+    visibility: visible;
+}
+
+.start {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: double gray 5px;
+    margin-top: 3vh;
+}
+
+.start:hover, .start:focus {
+    background-color: white;
+    color: black;
+}
+
+@media (prefers-color-scheme: dark){
+    .textbox {
+        color: white;
+        background-color: black;
+    }
+}
