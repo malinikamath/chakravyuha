@@ -6,7 +6,9 @@ let blacklights = false;
 let flashlight = false;
 search.addEventListener("click", function() {
     flashlight = true;
-    search.innerHTML = "r new flashlight should help you look in the dark ";
+    search.innerHTML = "r new flashlight should help you look ";
+    let phoneInfo = document.getElementsByClassName("hidden")[0];
+    phoneInfo.innerHTML = "Your flashlight uncovers a switch to change the lighting.";
     noteType.innerHTML = '<a href="images/open_notebook.png" target="_blank" data-lightbox="note" data-title="You need to find the key under the right lights." data-alt="Notebook opened to Entry XXX." class="dark-notebook"> <img src="images/notebook.png" alt="Closed notebook."> </a>';
 })
 
