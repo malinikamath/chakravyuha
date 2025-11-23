@@ -31,7 +31,7 @@ img {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    width: 30vw;
+    width: 45vw;
     height: auto;
 }
 
@@ -80,6 +80,12 @@ p:hover .hidden_text, p:focus .hidden_text {
     body {
         background-color: rgb(1, 72, 72);
     }
+    .light-notebook {
+        visibility: hidden;
+    }
+    .dark-notebook {
+        visibility: visible;
+    }
 }
 
 /* hide certain content from laptop */
@@ -104,3 +110,19 @@ p:hover .hidden_text, p:focus .hidden_text {
 #cat.moveRight {
   left: 30vw;
 }
+
+/* right hall way two notebook visibility */
+    .light-notebook {
+        visibility: visible;
+    }
+    .dark-notebook {
+        visibility: hidden;
+    }
+    @media (prefers-color-scheme: dark){
+        .light-notebook {
+            visibility: hidden;
+        }
+        .dark-notebook {
+            visibility: visible;
+        }
+    }

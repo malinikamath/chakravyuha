@@ -11,18 +11,29 @@
 <body>
     <main>
         <div class="textbox">
-            <h1>Right Way -- SAFE</h1>
+            <h1>A Room of Doors</h1>
+            <p>It feels like there's an endless amount of doors in this room, but only a few have handles. They're locked. Where are the <span id="keys">keys</span> to the doors?</p>
+            <p class="light-notebook">You<span id="search"> search the room</span> for more information.</p>
+            <p class="light-notebook">Good thing the <span id=lights>lights</span> are on.</p>
+            <p class="dark-notebook">Strange winds jostle you violently when there is no light to protect you.</p>
         </div>
         <div class="textbox" id="notebook">
             <h2>Notebook</h2>
-            <a href="images/open_notebook.png" target="_blank" data-lightbox="note"
-            data-title="Title here"
-            data-alt="Notebook opened to Entry XXX.">
-                <img src="images/notebook.png" alt="Closed notebook.">
-            </a>
+            <p id="switch">
+                <a href="images/open_notebook.png" target="_blank" data-lightbox="note"
+                data-title="The right door is the one whose keys can't be seen under plain light. But creatures lurk in the dark - you need a flashlight to scare them away."
+                data-alt="Notebook opened to Entry XXX." class="light-notebook">
+                    <img src="images/notebook.png" alt="Closed notebook.">
+                </a>
+            </p>
+        </div>
+        <div>
+            <p id="door-one"></p>
+            <p id="door-three"></p>
+            <p id="door-two"></p>
         </div>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="js/navigation_right_two.js"></script>
     <script>lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true})</script>
