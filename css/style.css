@@ -5,7 +5,7 @@ body {
     display: grid;
     margin: 0;
     place-items: center;
-    font-size: larger;
+    font-size: large;
     font-family: 'Courier New', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -31,15 +31,15 @@ img {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    width: 50vw;
+    width: 30vw;
     height: auto;
 }
 
   /* caption */
   .lb-data .lb-caption {
     display: block;
-    font-size: larger;
-    padding: 4vh;
+    font-size: large;
+    padding-top: 2vh;
     text-align: center;
     font-family: 'Lucida Handwriting', 'Segoe Script', 'Courier New', 'Arial Narrow', Arial, sans-serif;
   }
@@ -47,7 +47,7 @@ img {
   /* hide elements */
 .hidden, .hidden_text {
     visibility: hidden;
-    padding: 1vh;
+    padding: 1vh 1vw;
 }
 p:hover .hidden_text, p:focus .hidden_text {
     visibility: visible;
@@ -87,4 +87,20 @@ p:hover .hidden_text, p:focus .hidden_text {
     .hidden {
         visibility: visible;
     }
+}
+
+
+
+
+/* route specific styling */
+
+/* hallway one cat moves right*/
+#cat {
+  position: relative;
+  left: 0;
+  transition: left 5s linear;
+}
+
+#cat:focus, #cat:hover {
+  left: 30vw;
 }
