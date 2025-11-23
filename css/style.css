@@ -31,7 +31,7 @@ img {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    width: 45vw;
+    width: 50vw;
     height: auto;
 }
 
@@ -57,6 +57,7 @@ p:hover .hidden_text, p:focus .hidden_text {
 /* style buttons */
 .btn {
     display: inline-block;
+    max-width: 90%;
     padding: 10px 20px;
     background-color: black;
     color: white;
