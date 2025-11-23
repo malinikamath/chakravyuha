@@ -101,6 +101,6 @@ p:hover .hidden_text, p:focus .hidden_text {
   transition: left 5s linear;
 }
 
-#cat:focus, #cat:hover {
+#cat.moveRight {
   left: 30vw;
 }
