@@ -2,7 +2,7 @@ let leaves = document.getElementById("leaves");
 let p = document.getElementById("phone_back");
 leaves.addEventListener("click", function () {
   leaves.innerHTML = "You uncover the broken remains of a flip phone's keyboard";
-  p.innerHTML = '<img id="phone" src="images/flipphone_top.png" alt="The top of a flipphone keyboard. 1 is voicemail. 2 is a, b, c. 3 is d, e, f."><br><img id="phone" src="images/flipphone_middle.png" alt="The middle of a flipphone keyboard. 4 is g, h, i. 5 is j, k, l. 6 is m, n, o."><br><img id="phone" src="images/flipphone_bottom.png" alt="The bottom of a flipphone keyboard. 7 is p, q, r, s. 8 is t, u, v. 9 is w, x, y, z."></img>';
+  p.innerHTML = '<img id="phone" src="images/flipphone_top.png" alt="The top of a flipphone keyboard. 1 is voicemail. 2 is a, b, c. 3 is d, e, f."><br><img id="phone" src="images/flipphone_middle.png" alt="The middle of a flipphone keyboard. 4 is g, h, i. 5 is j, k, l. 6 is m, n, o."><br><img id="phone" src="images/flipphone_bottom.png" alt="The bottom of a flipphone keyboard. 7 is p, q, r, s. 8 is t, u, v. 9 is w, x, y, z."></img><br>';
 });
 
 
