@@ -155,10 +155,15 @@ header .btn {
 #cat {
   position: relative;
   left: 0;
-  transition: left 5s linear;
+  transition: left 25s linear;
 }
 #cat.moveRight {
-  left: 30vw;
+  left: 100vw;
+}
+#cat_img {
+    opacity: 0.9;
+    box-shadow: 0 0 0 2px rgb(250, 247, 247);
+    border-radius: 45px;
 }
 
 

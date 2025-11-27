@@ -29,9 +29,9 @@ hallway.addEventListener("click", function(){
 hallway.addEventListener("dblclick", function(){
     double = true;
     content[0].innerHTML = "A cat-creature(?) appears.";
-    content[1].innerHTML = "It purrs enticingly. It might like being pet."
+    content[1].innerHTML = "It purrs enticingly. Despite the strange white aura around it, you think it might like being pet."
     let img = document.getElementById("notebook");
-    img.innerHTML = "<button class='text-button' id='cat'><img src='images/cat.png' alt='Cat-creature going right.'></button>";
+    img.innerHTML = "<button class='text-button' id='cat'><img id='cat_img' src='images/cat.png' alt='Cat-creature going right.'></button>";
     buttons.innerHTML = '<p><a class= "btn" href="left_two.html">Follow cat</a></p>';
     let cat = document.getElementById("cat");
     cat.addEventListener("click", () => move_cat());
@@ -41,7 +41,7 @@ function move_cat(){
     let cat = document.getElementById("cat");
     cat.classList.add("moveRight");
     hallway.innerHTML = "Cat-Creature (Cute)";
-    content[0].innerHTML = '"Wash my belly," says the cat-creature, quoting an obscure meme you barely recognize.'
+    content[0].innerHTML = '"Gotta go fast," says the cat-creature, quoting an obscure meme you barely recognize.'
     content[1].innerHTML = "How does it access social media from here?<br><br>You pat down yourself to see if you have your phone so you can ask for the WiFi password or maybe switch to it's data plan. Sadly, your pockets are as empty as they were when you first woke up.";
     buttons.innerHTML = '<p><a class= "btn" href="left_two.html">Follow cat left</a><a class= "btn" href="right_two.html">Follow cat right</a></p>';
 }
