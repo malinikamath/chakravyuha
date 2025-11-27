@@ -75,6 +75,16 @@ img {
    width: 30vw;
     max-width: 150px;
 }
+/* special phone image styling */
+#phone_back {
+    display: inline-block;
+    background-color: rgb(149, 149, 149);
+    max-width: 400px;
+}
+#phone {
+    width: 80vw;
+    max-width: 300px;
+}
 
 /* style textboxes */
 .textbox, .lb-data .lb-caption {
