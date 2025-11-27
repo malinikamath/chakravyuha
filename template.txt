@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <audio class="sound" src="sounds/creepy-halloween-bells-loop-408748.mp3" autoplay loop hidden></audio>
         <div class="textbox">
             <h1>TEXT HERE</h1>
         </div>

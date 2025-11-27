@@ -1,4 +1,3 @@
-let noteType = document.getElementById("switch");
 let search = document.getElementById("search");
 let lights = document.getElementById("lights");
 let keys = document.getElementById("keys");
@@ -6,10 +5,7 @@ let blacklights = false;
 let flashlight = false;
 search.addEventListener("click", function() {
     flashlight = true;
-    search.innerHTML = "r new flashlight should help you look ";
-    let phoneInfo = document.getElementsByClassName("hidden")[0];
-    phoneInfo.innerHTML = "Your flashlight uncovers a switch to change the lighting.";
-    noteType.innerHTML = '<a href="images/open_notebook.png" target="_blank" data-lightbox="note" data-title="You need to find the key under the right lights." data-alt="Notebook opened to Entry XXX." class="dark-notebook"> <img src="images/notebook.png" alt="Closed notebook."> </a>';
+    search.innerHTML = " find a new flashlight that should help you look ";
 })
 
 lights.addEventListener("click", function(){
@@ -24,10 +20,10 @@ let doorTwo = document.getElementById("door-two");
 let doorThree = document.getElementById("door-three");
 keys.addEventListener("click", function(){
     if(flashlight == false){
-        doorOne.innerHTML = '<a class= "btn" href="door_one.html">DOOR ONE</a>';
+        doorOne.innerHTML = '<a class= "btn" href="door_one.html">Enter door one</a>';
     } else if(blacklights == false){
-        doorTwo.innerHTML = '<a class= "btn" href="door_two.html">DOOR TWO</a>';
+        doorTwo.innerHTML = '<a class= "btn" href="door_two.html">Enter flashlight door</a>';
     } else {
-        doorThree.innerHTML = '<a class= "btn" href="door_three.html">DOOR THREE</a>';
+        doorThree.innerHTML = '<a class= "btn" href="door_three.html">Enter blacklight door</a>';
     }
 })

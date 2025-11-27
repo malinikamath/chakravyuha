@@ -10,12 +10,13 @@
 </head>
 <body>
     <main>
+        <audio class="sound" src="sounds/creepy-halloween-bells-loop-408748.mp3" autoplay loop hidden></audio>
         <div class="textbox">
             <h1>Survival!</h1>
-            <p>You breathe a sigh of relief. The gnawing hunger of the forest abates. Maybe you're safe now<span id="question">?</span></p>
+            <p>You breathe a sigh of relief. The gnawing hunger of the forest abates. Maybe you're safe now<button class="text-button" id="question">?</button></p>
         </div>
         <div class="textbox" id="notebook">
-            <h2>Used notebook</h2>
+            <h2><button class="text-button">Used notebook</button></h2>
             <a href="images/open_notebook.png" target="_blank" data-lightbox="note"
             data-title="Resting? There's no question of it - it must not be done!<br><br>You're being hunted: examine the right questions to get the right answers."
             data-alt="Notebook opened to Entry XXX." id="left_one_notebook">
@@ -24,6 +25,7 @@
         </div>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
     <script src="js/navigation_left_one.js"></script>
+    <script src="js/navigation.js"></script>
     <script>lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true})</script>

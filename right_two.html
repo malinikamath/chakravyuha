@@ -10,17 +10,19 @@
 </head>
 <body>
     <main>
+        <audio class="sound" src="sounds/creepy-halloween-bells-loop-408748.mp3" autoplay loop hidden></audio>
         <div class="textbox">
             <h1>A Room of Doors</h1>
-            <p>It feels like there's an endless amount of doors in this room, but only a few have handles. They're locked. Where are the <span id="keys">keys</span> to the doors?</p>
-            <p class="light-notebook">You<span id="search"> search the room</span> for more information.</p>
-            <p class="hidden"></p>
-            <p class="light-notebook">Good thing the <span id=lights>lights</span> are on.</p>
-            <p class="dark-notebook">Strange winds jostle you violently when there is no light to protect you.</p>
+            <p>It feels like there's an endless amount of doors in this room, but only a few have handles. They're locked.
+                Where are the <button id="keys" class="text-button">keys</button> to the doors?
+            </p>
+            <p class="light-notebook">You <button id="search" class="text-button">search the room</button> for more information.</p>
+            <p class="light-notebook">Good thing the <button class="text-button" id=lights>lights</button> are on.</p>
+            <p class="dark-notebook">Strange winds jostle you violently when there is no light to protect you. It's clear you need light. Maybe light <strong>mode</strong> will help?</p>
         </div>
         <div class="textbox" id="notebook">
             <h2>Notebook</h2>
-            <p id="switch">
+            <p>
                 <a href="images/open_notebook.png" target="_blank" data-lightbox="note"
                 data-title="The right door is the one whose keys can't be seen under plain light. But creatures lurk in the dark - you need a flashlight to scare them away."
                 data-alt="Notebook opened to Entry XXX." class="light-notebook">
@@ -35,6 +37,7 @@
         </div>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
     <script src="js/navigation_right_two.js"></script>
+    <script src="js/navigation.js"></script>
     <script>lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true})</script>

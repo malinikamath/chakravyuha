@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked Door</title>
+    <link rel="icon" type="image/png" href="images/arrow.png">    
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <audio class="sound" src="sounds/creepy-halloween-bells-loop-408748.mp3" autoplay loop hidden></audio>
+        <div class="textbox">
+            <h1>Locked Out</h1>
+            <p>You happen across a keypad-locked door. But what on earth could you enter?</p>
+            <p>The note beneath it only says: "Remember to use the first number for each letter".</p>
+            <p>Beside you is a path that might lead to your escape instead.</p>
+        </div>
+        <div class="textbox">
+            <form id="lockForm">
+            <fieldset>
+                <legend>Code Panel:</legend>
+                <label for="digits">Enter code: </label>
+                    <input type="number" id="digits" name="digits" min="0" max="3837984464" required><br>
+                <button id="formSubmit" type="submit"><strong>Unlock</strong></button>
+            </fieldset>
+            </form>
+            <p id="message"></p>
+        </div>
+        <p>
+            <a class="btn" href="side_path.html">Take side path</a>
+        </p>
+    <script src="js/navigation.js"></script>
+    <script src="js/navigation_lock.js"></script>
+    </main>
+</body>
+</html>

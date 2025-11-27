@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITLE HERE</title>
+    <title>Door Three</title>
     <link rel="icon" type="image/png" href="images/arrow.png">    
     <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
+        <audio class="sound" src="sounds/creepy-halloween-bells-loop-408748.mp3" autoplay loop hidden></audio>
         <div class="textbox">
-            <h1>DOOR THREE SAFE</h1>
+            <h1>Dizzy, Dizzy, Dizzy</h1>
+            <p>The door slams shut and locks behind you.</p>
+            <p>The hallway seems to tilt right at an impossible angle, making you feel more and more dizzy as you go on.
+                You hope you don't get turned around enough to end up back where you started.</p>
+            <p>There's another fork in the path up ahead.</p>
         </div>
         <div class="textbox" id="notebook">
             <h2>Notebook</h2>
             <a href="images/open_notebook.png" target="_blank" data-lightbox="note"
-            data-title="Title here"
+            data-title="On your left. Yours is first."
             data-alt="Notebook opened to Entry XXX.">
                 <img src="images/notebook.png" alt="Closed notebook.">
             </a>
         </div>
-    <script src="dist/js/lightbox-plus-jquery.js"></script>
+            <p>
+                <a class= "btn" href="fork_two.html">Go right</a>
+                <a class= "btn" href="fork_one.html">Go left</a>
+            </p>    <script src="dist/js/lightbox-plus-jquery.js"></script>
     <script src="js/navigation.js"></script>
     <script>lightbox.option({
         'resizeDuration': 200,

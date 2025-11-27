@@ -1,3 +1,63 @@
+/* style lock to look old */
+#lockForm {
+  background: #282728;
+  border: 4px solid #23122a;
+  border-radius: 10px;
+  padding: 5%;
+  width: 70%;
+  margin: auto;
+  font-family: 'Cinzel', serif;
+  color: rgb(245, 245, 245);
+  position: relative;
+  box-shadow: inset 0 0 5px rgb(38, 13, 43);
+  box-shadow: 0 0 20px rgb(11, 5, 15);
+}
+/* use smaller font for labels */
+label {
+    font-size: small;
+}
+/* control input format */
+#lockForm input {
+  width: 40vw;
+  max-width: 100px;
+  text-align: center;
+  margin: 0.3vw;
+  background: #312833;
+  border: 2px solid #5c5160;
+  border-radius: 6px;
+  color: rgb(245, 245, 245);
+  box-shadow: inset 0 0 8px #250228;
+}
+/* focus for input!! */
+#lockForm input:focus {
+  border-color: #9c27b0;
+  box-shadow: 0 0 8px #9c27b0;
+}
+/* minor styling for unlock button on lock */
+#formSubmit {
+    background: #312833;
+    border: 2px solid #5c5160;
+    border-radius: 6px;
+    color: rgb(245, 245, 245);
+    margin-top: 2vh;
+}
+
+/* focus ring for keyboard users */
+:focus, a:focus img {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.8);
+}
+
+/* blend action trigger buttons with text */
+.text-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: text;
+}
+
 /* keep body simple */
 body {
     text-align: center;
@@ -35,7 +95,7 @@ img {
     height: auto;
 }
 
-  /* caption */
+  /* caption styling for notebook entries */
   .lb-data .lb-caption {
     display: block;
     font-size: large;
@@ -44,7 +104,7 @@ img {
     font-family: 'Lucida Handwriting', 'Segoe Script', 'Courier New', 'Arial Narrow', Arial, sans-serif;
   }
 
-  /* hide elements */
+  /* hide elements for discovery */
 .hidden, .hidden_text {
     visibility: hidden;
     padding: 1vh 1vw;
@@ -63,6 +123,7 @@ p:hover .hidden_text, p:focus .hidden_text {
     color: white;
     border: double gray 5px;
     margin-top: 3vh;
+    text-transform: uppercase;
 }
 
 .btn:hover, .btn:focus {
@@ -70,8 +131,37 @@ p:hover .hidden_text, p:focus .hidden_text {
     color: black;
 }
 
+/* style heading navigation for main and learn pages */
+header {
+    background-color: black;
+    padding-bottom: 2vh;
+    width: 100%;
+}
+header .btn {   
+    border: none;
+}
 
-/* dark mode */
+/* hallway one cat moves right*/
+#cat {
+  position: relative;
+  left: 0;
+  transition: left 5s linear;
+}
+#cat.moveRight {
+  left: 30vw;
+}
+
+
+/* right hallway two notebook visibility */
+    .light-notebook {
+        visibility: visible;
+    }
+    .dark-notebook {
+        visibility: hidden;
+    }
+
+
+/* dark mode styling */
 @media (prefers-color-scheme: dark){
     .textbox, .lb-data .lb-caption {
         color: white;
@@ -81,12 +171,12 @@ p:hover .hidden_text, p:focus .hidden_text {
     body {
         background-color: rgb(1, 72, 72);
     }
-    .light-notebook {
-        visibility: hidden;
-    }
-    .dark-notebook {
-        visibility: visible;
-    }
+        .light-notebook {
+            visibility: hidden;
+        }
+        .dark-notebook {
+            visibility: visible;
+        }
 }
 
 /* hide certain content from laptop */
@@ -95,35 +185,3 @@ p:hover .hidden_text, p:focus .hidden_text {
         visibility: visible;
     }
 }
-
-
-
-
-/* route specific styling */
-
-/* hallway one cat moves right*/
-#cat {
-  position: relative;
-  left: 0;
-  transition: left 5s linear;
-}
-
-#cat.moveRight {
-  left: 30vw;
-}
-
-/* right hall way two notebook visibility */
-    .light-notebook {
-        visibility: visible;
-    }
-    .dark-notebook {
-        visibility: hidden;
-    }
-    @media (prefers-color-scheme: dark){
-        .light-notebook {
-            visibility: hidden;
-        }
-        .dark-notebook {
-            visibility: visible;
-        }
-    }
